@@ -1,0 +1,492 @@
+\documentclass{article}
+\usepackage[a4paper,portrait,margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{fontspec}
+\newfontfamily\s[Script=Devanagari]{Shobhika}
+\newfontfamily\sa[Script=Devanagari]{Shobhika-Bold}
+\newfontfamily\hindifont{Noto Sans Devanagari}[Script=Devanagari]
+\usepackage{polyglossia}
+\usepackage{fontawesome}
+\setmainlanguage{english}
+\setotherlanguages{marathi,hindi,sanskrit}
+\newfontfamily\devanagarifont[Script=Devanagari]{Noto Serif Devanagari}
+\usepackage{skt}
+\usepackage{multicol}
+
+
+
+\usepackage[most]{tcolorbox}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{verse}
+\settowidth{\versewidth}{It lies behind stars and under hills,}
+\addtolength{\versewidth}{2em}
+\usepackage{xcolor}
+
+
+
+
+
+\title {Sanskrit typing in Overleaf}
+\author{Priyanka Salekar}
+\date{January 2024}
+
+\begin{document}
+
+\newcommand{\frase}[1]{
+    \textbf{\textcolor{teal}{#1}}
+}
+\newcommand{\frasedos}[1]{
+    \textbf{\textcolor{cyan}{#1}}
+}
+\newcommand{\frasetres}[1]{
+    \textbf{\textcolor{teal}{#1}}
+}
+
+\newcommand{\tipo}[1]{
+    \fcolorbox{yellow}{yellow!50}{#1}
+}
+\newcommand{\subtipo}[1]{
+    \fcolorbox{yellow}{yellow!20}{#1}
+}
+\newcommand{\tipodos}[1]{
+    \fcolorbox{cyan!50}{cyan!10}{#1}
+}
+\newcommand{\tipotres}[1]{
+    \fcolorbox{teal}{teal!20}{#1}
+}
+
+\newcommand{\ejemplobox}[1]{
+\begin{tcolorbox}
+[breakable,colback=white,colframe=cyan,width=\dimexpr\textwidth+12mm\relax,enlarge left by=-6mm]
+#1
+\end{tcolorbox}
+}
+
+
+\maketitle
+\vspace{20mm}
+{\begin{center}
+ \large\textbf{\textit{All fonts work with XeLaTex compiler only.\\ Otherwise upload the script file separetely.}}   
+\end{center}}
+\pagebreak
+\section{क्रिया}
+
+\subsubsection{ \s \tipo{बा/बन्नि} $\longrightarrow$ आ/आओ/come/venir}
+\begin{enumerate}
+    \item {\s इल्लि \frase{बा} } $\longrightarrow$ {\s इधर \frasedos{आ}}
+    \item {\s नन्ना जोतगागे \frase{बन्निि} $\longrightarrow$  मेरे साथमे \frasedos{आओ }  }
+    \item {\s उटक्के \frase{बन्नि} $\longrightarrow$  खानेको \frasedos{आओ }  }    
+\end{enumerate}
+
+\subsubsection{ \s \tipo{होगु/होगि} $\longrightarrow$ जा/जाओ/go/ir }
+\begin{enumerate}
+    \item {\s शालेगे \frase{होगु}  } $\longrightarrow$ {\s  स्कूल को \frasedos{जाओ}}
+    \item {\s अल्लिगे \frase{होगबेड़ा} $\longrightarrow$  यहाँ से \frasedos{मत​ जाओ} }
+    \item {\s मनेगे \frase{होगु} $\longrightarrow$  घरको \frasedos{जाओ}  }    
+\end{enumerate}
+
+\subsubsection{ \s \tipo{होगु/होगि} $\longrightarrow$  जा/जाओ/go/ir }
+\begin{enumerate}
+    \item {\s शालेगे \frase{होगु}  } $\longrightarrow$ {\s  स्कूल \frasedos{जाओ}}
+    \item {\s अल्लिगे \frase{होगबेड़ा} $\longrightarrow$  यहाँ से \frasedos{जाओ} }
+    \item {\s मनेगे \frase{होगु} $\longrightarrow$  घरको \frasedos{जाओ}  }    
+\end{enumerate}
+
+\subsubsection{ \s \tipo{इर्तिनि} $\longrightarrow$  रहो/go/ir }
+\begin{enumerate}
+    \item {\s नीवु नन जोत्थे इल्लि \frasedos{इरु}  $\longrightarrow$   मेरे साथ यहा  \frasedos{रहो} }
+    \item {\s नानु इल्लि \frase{ईरुत्तेने} $\longrightarrow$ मै यहा \frasedos{रेहता} हु}
+\end{enumerate}
+
+
+
+
+\section{\s क्रिया + बेकु (Please do/ Imperative Mood)}
+\begin{multicols}{2}
+\begin{enumerate}
+    \item {\s \frase{माड} + \frasedos{बेकु} $\longrightarrow$ \s  करो } 
+    \item {\s \frase{कोड} + \frasedos{बेकु} $\longrightarrow$  दो  } 
+    \item {\s \frase{इडा} + \frasedos{बेकु} $\longrightarrow$  रखो  } 
+    \item {\s \frase{तगो} + \frasedos{बेकु} $\longrightarrow$ खरीदो }
+    \item {\s \frase{माताळ} + \frasedos{बेकु} $\longrightarrow$ बात  करो }
+    \item {\s \frase{हेळ} + \frasedos{बेकु} $\longrightarrow$  बोलो }
+    \item {\s \frase{केऴ} + \frasedos{बेकु} $\longrightarrow$  सुनो }
+    \item {\s \frase{निल्लिस} + \frasedos{बेकु} $\longrightarrow$ रुको }
+    \item {\s \frase{बर} + \frasedos{बेकु} $\longrightarrow$ आओ }
+    \item {\s \frase{होग} + \frasedos{बेकु} $\longrightarrow$ जाओ }        
+\end{enumerate}
+\end{multicols}
+
+\section{\s क्रिया + बेडि (don't)} 
+\begin{multicols}{2}
+
+\begin{enumerate}
+    \item {\s \frase{माड} + \frasedos{बेडि} $\longrightarrow$ \s मत करो } 
+    \item {\s \frase{कोड} + \frasedos{बेडि} $\longrightarrow$ मत दो  } 
+    \item {\s \frase{इडा} + \frasedos{बेडि} $\longrightarrow$ मत रखो  } 
+    \item {\s \frase{तगो} + \frasedos{बेडि} $\longrightarrow$ मत लो /मत खरीदो }
+    \item {\s \frase{माताळ} + \frasedos{बेडि} $\longrightarrow$ बात  मत करो }
+    \item {\s \frase{हेळ} + \frasedos{बेडि} $\longrightarrow$ मत बोलो }
+    \item {\s \frase{केऴ} + \frasedos{बेडि} $\longrightarrow$ मत सुनो }
+    \item {\s \frase{निल्लिस} + \frasedos{बेडि} $\longrightarrow$ मत रुको }
+    \item {\s \frase{बर} + \frasedos{बेडि} $\longrightarrow$ मत आओ }
+    \item {\s \frase{होग} + \frasedos{बेडि} $\longrightarrow$ मत जाओ }
+    \item {\s \frase{होग} + \frasedos{बेडि} $\longrightarrow$ मत जाओ }
+    
+\end{enumerate}
+\end{multicols}
+
+\section{\s क्रिया + बारदु (Should not)}
+
+
+\begin{enumerate}
+    \item {\s \frase{माड} + \frasedos{बारदु} $\longrightarrow$ \s नही करना चाहिये  (should not do)}
+    \item {\s \frase{हाक} + \frasedos{बारदु} $\longrightarrow$ नहि रखना चाहिये (should not put)  } 
+    \item {\s \frase{इडा} + \frasedos{बारदु} $\longrightarrow$ नहि रखना चाहिये (should not keep) } 
+\end{enumerate}
+
+\section{others}
+\begin{enumerate}
+    \item {\s  माड + कोडि $\longrightarrow$ करके दो (do) }
+    \item {\s  तगोन्ड कोडि $\longrightarrow$ लाकर दो (bring) }
+    \item 
+
+\end{enumerate}
+
+
+\section{\s  sentence join examples }
+
+\begin{enumerate}
+    \item  {\s ननगे पैन​ कोडी याकान्द्रे नानु केलसा माडबेकु $\longrightarrow$ मुझे पैन​ दो \frasedos{क्योकि} मुझे काम करना है } 
+    \item {\s येल्ला Documents इद्रु \frase{आन्द्रे} याके नन केलसा माडता इल्ला $\longrightarrow$ हालांकि सारे Documents  \frasedos{पर​} मेरा काम नहि कर रहे}
+\end{enumerate}
+
+
+\section{\s क्रिया + इद्रे (if you, करोगे तो  )}
+\begin{enumerate}
+    \item {\s \frase{माडिदरे} $\longrightarrow$ \s करोगे तो  } 
+    \item {\s \frase{तगोन्ड्रे} $\longrightarrow$ \s लोगे तो / खरीदोगे तो  } 
+    \item {\s \frase{कोट्टरे}  $\longrightarrow$ \s दोगे तो } 
+    \item {\s \frase{होगरे}  $\longrightarrow$ \s जाओगे तो } 
+    \item {\s \frase{बंदरे}  $\longrightarrow$ \s  आओगे } 
+    
+\end{enumerate}
+
+\section{\s क्रिया + अक्के / infinitive form or for (के लिये / ने का)}
+\begin{enumerate}
+    \item {\s \frase{माडक्के} $\longrightarrow$ \s करने के लिये/ करने का  } 
+    \item {\s \frase{केलसक्के} $\longrightarrow$ \s काम करने के लिये/ काम का  } 
+
+\end{enumerate}
+
+\section{\s क्रिया + इदिया / (non people or इदु / अदु)}
+\begin{enumerate}
+    \item {\s \frase{माडिदिया} $\longrightarrow$ \s कर रहा है क्या? } 
+    \item {\s \frase{कोडतिया} $\longrightarrow$ \s दे रहा है क्या ? } 
+\end{enumerate}
+
+
+\section{\s संज्ञा + आगि (ly)}
+\begin{multicols}{2}
+
+\begin{enumerate}
+    \item {\s \frase{सरि} + \frasedos{आगि} $\longrightarrow$ \s सही से } 
+    \item {\s \frase{चन्ना} + \frasedos{आगि} $\longrightarrow$ \s अच्छे से } 
+    \item {\s \frase{clean} + \frasedos{आगि} $\longrightarrow$ \s cleanly} 
+
+    \item {\s \frase{निधानवागि} $\longrightarrow$ \s धीरे से } 
+    \item {\s \frase{वेगवागि} $\longrightarrow$ \s जल्दी से } 
+\end{enumerate}
+\end{multicols}
+
+\section{\s संज्ञा + इंदा (ly)}
+\begin{multicols}{2}
+
+\begin{enumerate}
+    \item {\s \frase{नाळेयिन्दा} $\longrightarrow$ \s कल से } 
+    \item {\s \frase{नाळेयिन्दा} $\longrightarrow$ \s कल से } 
+\end{enumerate}
+\end{multicols}
+
+
+\section{\s बेरे + संज्ञा  (other )}
+
+
+\begin{enumerate}
+    \item {\s \frase{बेरे } + \frasedos{car} $\longrightarrow$ \s other car } 
+    \item {\s \frase{बेरे} + \frasedos{याव} $\longrightarrow$ \s (which other) और कोंनसी } (yaava always goes with bere) 
+    \item {\s \frase{चन्ना} + \frasedos{आगि} $\longrightarrow$ \s अच्छे से } 
+\end{enumerate}
+
+\section{\s Time phrases}
+
+
+\begin{enumerate}
+    \item {\s \frase{वारक्के ओन्दु सरि} $\longrightarrow$ \s हफ्ते मे एक बार } 
+    \item {\s \frase{तिंगळिगे ओन्दु सरि} $\longrightarrow$ \s महिने मे एक बार } 
+    \item {\s \frase{ओन्दु सरि} $\longrightarrow$ \s एक बार } 
+    \item {\s \frase{तप्पिसदे} $\longrightarrow$ \s भुले बिना } 
+
+\end{enumerate}
+
+
+\begin{enumerate}
+    \item {\s \frase{आन्टे}  $\longrightarrow$ \s वह आया इसलिए हम गए। } 
+    \item {\s \frase{आन्द्रे}  $\longrightarrow$ मत दो  } 
+    \item {\s \frase{इडा} + \frasedos{बेडि} $\longrightarrow$ मत रखो  } 
+    \item {\s \frase{तगो} + \frasedos{बेडि} $\longrightarrow$ मत लो /मत खरीदो }
+    \item {\s \frase{माताळ} + \frasedos{बेडि} $\longrightarrow$ बात  मत करो }
+    \item {\s \frase{हेळ} + \frasedos{बेडि} $\longrightarrow$ मत बोलो }
+    \item {\s \frase{केऴ} + \frasedos{बेडि} $\longrightarrow$ मत सुनो }
+    \item {\s \frase{निल्लिस} + \frasedos{बेडि} $\longrightarrow$ मत रुको }
+    \item {\s \frase{बर} + \frasedos{बेडि} $\longrightarrow$ मत आओ }
+    \item {\s \frase{होग} + \frasedos{बेडि} $\longrightarrow$ मत जाओ }
+    \item {\s \frase{होग} + \frasedos{बेडि} $\longrightarrow$ मत जाओ }
+    
+\end{enumerate}
+
+\section{\s Important Questions  } 
+\begin{enumerate}
+    \item {\s इल्लि \frase{बेरे याव} मनेयल्लि केलसा माडतिया $\longrightarrow$ यहाँ \frasedos{और कौनसे}  घर मे काम करते हो }
+    \item {\s office work timings येनु $\longrightarrow$ what are office working time?}
+    \item {\s  येन येनु फ़िल माडबेकु $\longrightarrow$ \frasedos{what all} do I have to fill}
+    \item {\s निवु टोकन \frase{एष्टू हॉट्टिगे} कोडक्के स्टार्ट माड्रातीरा$\longrightarrow$ आप टोकन \frasedos{कब तक}​ देना करना शुरू करेंगे?}
+\end{enumerate}
+
+\section{\s अगिदु । अयितु } 
+\begin{enumerate}
+    \item {\s उटा \frase{आगिदे}  $\longrightarrow$  खाना \frasedos{हो गया है}}
+    \item {\s केलसा \frase{आगिदे}  $\longrightarrow$  काम \frasedos{हो गया है}}
+    \item {\s Rain \frase{आगता}  इदे $\longrightarrow$ Rain \frasedos{हो रही है}} 
+    \item 
+
+\end{enumerate}
+
+
+\section{\s Important words } 
+
+\begin{enumerate}
+    \item {\s अवनु बन्दनु \frase{अन्टे} नावु होदेवु $\longrightarrow$ वह आया \frasedos{इसलिए} हम गए }
+    \item {\s \frase{होसा} पुस्तक तगोन्डकोडि $\longrightarrow$ \frasedos{नई} पुस्तक लाकर दो  }
+    \item {\s ननगे \frase{अष्टे} बेकु $\longrightarrow$ मुझे \frasedos{इतना हि} चाहिये  }
+    \item {\s नानु ई मुवी नोडि \frase{याक अन्दरे} अदु तुम्बा चनागिदे $\longrightarrow$ मैने ये मुवी देखी \frase{क्युकि} वो बहुत अच्छी है}
+    \item {\s बस्सु \frase{आगता} इदे / बस्सु \frase{बरता} इदे   } $\longrightarrow$ {\s बस \frasedos{आ गई} है }
+    \item {\s \frase{इन्नोन्द सला} माडबेकु  $\longrightarrow$ \frasedos{ दूसरी बार} करना होगा}
+    \item {\s \frase{तप्पिसदे} बरबेकु $\longrightarrow$  \frasedos{बिना भुले} आना होगा}
+    \item {\s \frase{तप्पिसदे} फ़ोर्म अप्लाय माडबेकु $\longrightarrow$  \frasedos{बिना भुले} फ़ोर्म अप्लाय करना होगा }
+    \item {\s Bangaloreyalli येल्ला कडे Traffic  इदे $\longrightarrow$ Bangalore में  \frasedos{हर जगाह } Traffic है }
+    \item {\s येल्ला Documents \frase{इद्रु} आन्द्रे याके नन केलसा माडता इल्ला $\longrightarrow$ \frasedos{हालांकि} सारे Documents  \frasedos{पर​} मेरा काम नहि कर रहे}
+    \item {\s निवु टोकन \frase{एष्टू हॉट्टिगे} कोडक्के स्टार्ट माड्रातीरा$\longrightarrow$ आप टोकन \frasedos{कब तक}​ देना करना शुरू करेंगे?}
+    \item {\s \frase{ईगले} बन्नि $\longrightarrow$ \frasedos{अभी ही} आओ $\longrightarrow$ Come \frasedos{right now}}
+    \item {\s \frase{ईगा} बन्नि $\longrightarrow$ \frasedos{अभी } आओ $\longrightarrow$ Come \frasedos{ now}}
+\end{enumerate}
+
+\section{\s  verb examples (Normal)} 
+
+\begin{enumerate}
+    \item {\s ओन्दु एप्लिकेशन फ़ोर्म \frase{ कोडतिरा }?$\longrightarrow$ एक अप्प्लिकेशन फ़ोर्म \frasedos{दोगे} ? }
+    \item {\s ताजा तरकारी  \frase{सिगत्ते} ?$\longrightarrow$ ताजा सब्जि \frasedos{ लाना }}
+    \item {\s टोकन कोडक्के स्टार्ट माडतिरा }
+\end{enumerate}
+
+
+\section{Conversations}
+
+\frase{\s A :  नीवु येल्लि होगताइद्दीरा ? }\\
+\\
+\frasedos{\s B नानु मौल अल्लि होगताइद्दीनि } \\
+\\
+\frase{\s A : ई माल तुम्बा दोड्डा इदे} \\
+\\
+\frasedos{\s B : निवु मुविगे टिकिट बुक माडिद्दिरा }\\
+\\
+\frase{\s A :  नन हत्थिरा मुरु टिकिट इवे }\\
+\\
+\frasedos{\s B :  मुवि मोदलु शोपिग माडना  }\\
+\\
+\frase{\s A : ननगे इ ड्रेस ईष्टा}\\
+\\
+\frasedos{\s B : इ ड्रेस चनागिल्ला । बेरे ड्रेस तगो } \\
+\\
+\frase{\s A : इ सारी यावा  ब्रान्ड आगिदे ? }\\
+\\
+\frasedos{\s B : इ ड्रेस चनगिदे , नीवु तगोतिरा ? }\\
+\\
+\frase{\s A : हवधु , ननगे कोडु}\\
+\\
+\frasedos{\s B :  ईगा नावु होगना }\\
+
+
+\section{Varamahalakshmi}
+\frase{\s A : इवत्तु वरमाहालक्ष्मीगे देवस्थानअक्के होगबेकु } $\longrightarrow$ {\s आज वरमहालक्ष्मी के लिए मंदिर जाना है } \\
+\\
+\frasedos{\s B : निवु अंगडिगे होगि मत्तु flowers तगोन्डबन्नि / तन्नी } \\
+\\
+\frase{\s A : सविता, इ रुम चनागिल्ला |  इन्नोद सला clean माडबेकु  } \\
+\\
+\frasedos{\s B : पुजा सामग्रिगळु येल्लि इवे ?}\\
+\\
+\frase{\s A : ननगे इदु गोत्थिल्ला ?}\\
+\\
+\frasedos{\s A : ओ देवरा । ननगे सहाय माडी ? नन्ना मातु केळि . इल्लि यारादरु इद्दारे ? }\\
+\\
+\frase{\s B : चिन्ते मडबेडा | येल्लारु इल्लिगे बन्नि | नावु start माडना }
+
+\section{Introductions}
+\frase{\s A : नमस्कारा, येन समाचारा, निम्मा मने अल्लि येल्लारु जना चेन्नागि इदया?}
+\\
+\frasedos{\s B : हवधु, नन्न मने सर्वे जना चनागिदे . निवु येन​ केलसा माडिदिया? निवु IT engineer? } \\
+\\
+\frase{\s A : हवधु । नानु एजिंनियर । नानु coding माडक्के इष्टा | निमन्नु मधवे आगिदिया ?   } \\
+\\
+\frasedos{\s B : हवधु , नमन्नु  इब्बरु हुडुगारु अन्द्रे ओन्दु हुडुगि }\\
+\\
+\frase{\s A : हवुधा? आदक्के तुम्बा कोल बन्दिद्रु }\\
+\\
+\frasedos{\s A : ई कोडू , आ कोडू ,नन  जिवनअल्लि तुंबा तलेनुवु इदे । येन माडबेकु  }\\
+\\
+\frase{\s B :चिन्ते माडबेडा , निम मगु येल्लि कलक्के होग्तिनि }\\
+\\
+\frasedos{\s B : नन चिक्क मगा स्कूलअल्लि होगताइदारे, नन दोड्ड मगा कोलेजल्लि  course माडताईदारे | अवरु entrence ए‍क्झामअल्लि first रेन्क अगिदे}
+
+\section{\s Important verb examples (Conjugated - होगबेकु) } 
+
+\begin{enumerate}
+    \item {\s ओन्दु Application form \frase{ कोडतिरा }?$\longrightarrow$ एक Application form  \frasedos{दोगे} ? }
+    \item {\s Glass \frase{ तगोडबन्नि }?$\longrightarrow$ Glass \frasedos{लेकर आओ} ? }
+    \item {\s   }
+\end{enumerate}
+
+\section{\s  verb examples (Conjugated - अक्के form) } 
+
+\begin{enumerate}
+    \item {\s अडिगे\frase{ माडक्के }मुन्चे   cooker wash माडि $\longrightarrow$ \frasedos{रसोई} करने के पेहले cooker wash करना } 
+\end{enumerate}
+
+
+
+\section{\s  Rules} 
+
+\begin{enumerate}
+    \item {\s \frase{ अक्के  } and  $\longrightarrow$ \frasedos{रसोई} करने के पेहले cooker wash करना } 
+    \item 
+\end{enumerate}
+
+
+
+\section{Devanagari - Shobhika font with Phonetic keyboard}
+\begin{Large}
+    \begin{itemize}
+    \item This need keyboard setting changed to Kagapa Phonetic keyboard.
+    
+    \item Must use these packages - fontspec, script packages
+    %\usepackage{fontspec}
+    %\newfontfamily\s[Script=Devanagari]{Shobhika}, %\newfontfamily\sa[Script=Devanagari]{Shobhika-Bold}
+    \item For e.g. -\\
+{\scriptsize {\s हो हौ ऽ हं स श ष कार्स्न्य विद्या सङ्कर्षण}}\\
+{\small {\s क्ष ज्ञ ण्य डढ टठ ॠ ॠ ळ ऋ ल ऌ वे ऐ आ अ ई इ उ ऊहु }}\\
+{\large {\s उपाध्यायान्दशाचार्याः विमूर्च्छिताः निष्कृतिः}}\\
+{\Large {\s क्त्वा क्ततवतु निष्ठा सक्तुमिव तितउना }}\\
+{\huge {\s होहौऽहंसशष कार्स्न्य विद्या सङ्कर्षण}} 
+\end{itemize}
+\end{Large}
+\pagebreak
+
+\section{Devanagari - Shobhika font with Google Input}
+\begin{Large}
+    \begin{itemize}
+    \item Needs google input tools installed or you can copy paste the content from its web-based version.\\
+    Link - https://www.google.co.in/inputtools/try/
+    \item Must use packages - fontspec, script packages
+    \item Set language to Sanskrit, Hindi or Marathi for typing Devanagari.
+    %\usepackage{fontspec}
+    %\newfontfamily\s[Script=Devanagari]{Shobhika}, %\newfontfamily\sa[Script=Devanagari]{Shobhika-Bold}
+    \item For e.g. -\\
+{\scriptsize {\s अ आ इ ई उ ऊ ऋ ॠ लृ लृ३ ए ऐ ओ औ अं अः ळ क्ष ज्ञ त्र ण्य}}\\
+{\small {\s अभून् नृपो विबुधसखः परन्तपः}}\\
+{\large {\s श्रुतान्वितो दशरथ इत्युदाहृतः।}}\\
+{\Large {\s गुणैर्वरं भुवनहितच्छलेन यं}}\\
+{\huge {\s सनातनः पितरमुपागमत् स्वयम्॥}} 
+\end{itemize}
+\end{Large}
+\pagebreak
+
+\section{Devanagari - Regular font with Google input}
+\begin{Large}
+    \begin{itemize}
+    \item Change keyboard settings to Google input tool or can copy paste from Aksharmukh - https://aksharamukha.appspot.com/converter
+
+    \item Must use hindifont command before every writing. 
+    %{\hindifont[]{}{}}%
+    
+    \item Must use these packages - fontspec, newfont command
+    %\newfontfamily
+    %\hindifont{Noto Sans Devanagari}[Script=Devanagari]
+     \item For e.g. -\\
+     {\hindifont
+     {\scriptsize क्ष ज्ञ ण्य डढ टठ ॠ ॠ ळ ऋ ल ऌ वे ऐ आ अ ई इ उ ऊहु}\\
+     {\small उपाध्यायान्दशाचार्याः विमूर्च्छिताः निष्कृतिः}\\
+     {\large क्त्वा क्ततवतु निष्ठा सक्तुमिव तितउना}\\
+     {\Large होहौऽहंसशष कार्स्न्य विद्या सङ्कर्षण}\\
+     {\huge हो हौ ऽ हं स श ष कार्स्न्य विद्या सङ्कर्षण}
+     }
+    \end{itemize}
+\end{Large}
+\pagebreak
+
+\section{Devanagari - Awesome font with Google input}
+\begin{Large}
+    \begin{itemize}
+        \item Works with google input tool
+        \item Begin writing with begin command in bracket sanskrit, hindi, etc.
+        \item must use packages - polyglossia, fontawesome and set command for language used - marathi, hindi, etc. fontfamily command
+        %\usepackage{polyglossia}
+        %\usepackage{fontawesome}
+        %\setmainlanguage{english}
+        %\setotherlanguages{marathi,hindi,sanskrit}
+        %\newfontfamily\devanagarifont[Script=Devanagari]{Noto Serif Devanagari}
+        \item \begin{sanskrit}
+\scriptsize {सर्वे मानवाः स्वतन्त्राः समुत्पन्नाः वर्तन्ते अपि च, गौरवदृशा अधिकारदृशा च समानाः एव वर्तन्ते।}\\
+\small लभेत सिकतासु तैलमपि यत्नतः पीडयन्\\
+\large पिबेच्च मृगतृष्णिकासु सलिलं पिपासार्दितः।\\
+\Large कदाचिदपि पर्यटन् शशविषाणमासादयेन्\\
+\huge न तु प्रतिनिविष्टमूर्खजनचित्तमाराधयेत्।।
+\end{sanskrit}
+    \end{itemize}
+\end{Large}
+\pagebreak
+
+\section{Roman Transliteration - IAST}
+\begin{Large}
+    \begin{itemize}
+    \item Needs keyboard setting changed to English (India) or can copy from Aksharmukh.\\
+    Click on the "ENG" at the right corner of the taskbar. Then you will see the "Language Preference" option. Click it. Settings page opens. There click on ``add a preferred language". Select "English (India) language pack." Install it. Now, from the taskbar, click on Eng. Select Eng (India) keyboard.
+    \item ā, Ā, ī, Ī, ū, Ū, ḥ, Ḥ, ṁ, Ṁ, ṭ, Ṭ, ḍ, Ḍ, ṇ, Ṇ, ś, Ś, r̥, R̥, l̥, L̥ - for these letters, press right Alt key+the respective letter.
+
+For capital letters, press the Caps Lock key as usual.
+
+ṣ, Ṣ - right Alt key + x, right Alt key + X 
+
+ñ, Ñ - right Alt key + y, right Alt key + Y
+
+ṅ, Ṅ - right Alt key + g, right Alt key + G
+\item For Eg. -\\
+\scriptsize ahaṁ brahmāsmi\\
+\small sarvaṁ khlvidaṁ brahma\\
+\large prajñānaṁ brahma\\
+\Large tattvamasi\\
+\huge ayamātmā brahma
+\end{itemize}
+\end{Large}
+
+\pagebreak
+
+\section{Old method}
+\Large Needs pre-processing.\\
+{\skt .sa;vRa;Da;ma;Ra;n,a :pa;i8a:=+tya:j1ya ma;a;mea;k\ZH{-12}{M} Za:=+NMa
+v.ra:ja \ZS{12}@A \\
+ A;h\ZH{-6}{M} tva;Ma .sa;vRa;pa;a;pea;Bya;ea ma;ea;[a;Y4a;ya;Sya;a;Y6a;ma
+ma;a Zua;.caH\ZS{4} \ZS{12}@A\ZS{6}@A 66 \ZS{12}@A\ZS{6}@A}
+\end{document}
